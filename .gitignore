@@ -1,0 +1,99 @@
+# ========================
+# OS / Filesystem
+# ========================
+
+.DS_Store
+Thumbs.db
+
+# ========================
+# Editors / IDEs
+# ========================
+
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ========================
+# Python
+# ========================
+
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# ========================
+# Node
+# ========================
+
+node_modules/
+
+# ========================
+# Environment / Secrets
+# ========================
+
+.env
+.env.*
+*.pem
+*.key
+secrets/
+credentials/
+
+# ========================
+# Generated Archives
+# ========================
+
+*.zip
+*.tar.gz
+
+# ========================
+# Runtime / Temporary
+# ========================
+
+tmp/
+temp/
+.cache/
+logs/
+*.log
+
+# ========================
+# Claude / AI Runtime
+# ========================
+
+.runs/
+.sessions/
+.artifacts/
+.generated/
+exports/
+
+# ========================
+# Local Testing Outputs
+# ========================
+
+test-output/
+playground/
+scratch/
+experiments/
+
+# ========================
+# Mac Metadata
+# ========================
+
+.AppleDouble
+.LSOverride
+Icon?
+
+# ========================
+# Windows Metadata
+# ========================
+
+Desktop.ini
+$RECYCLE.BIN/
+
+# ========================
+# Linux Metadata
+# ========================
+
+*~
+.nfs*

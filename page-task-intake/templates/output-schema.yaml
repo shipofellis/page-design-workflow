@@ -1,0 +1,71 @@
+step_name: "Page Task Intake"
+step_goal: "Convert a raw page design request into a stable Page Task Definition."
+input_used:
+  raw_user_request: string
+  extracted_fields:
+    product_name: string | unknown
+    product_description: string | unknown
+    page_name: string | unknown
+    page_type: string | unknown
+    target_user: string | unknown
+    user_source: string | unknown
+    funnel_stage: string | unknown
+    business_goal: string | unknown
+    secondary_business_goal: string | unknown
+    desired_user_action: string | unknown
+    known_constraints:
+      - string
+    existing_assets:
+      - string
+    reference_pages:
+      - string
+    language: string | unknown
+    market: string | unknown
+    device_priority: string | unknown
+output:
+  page_task_definition:
+    page_name: string
+    page_type: string
+    product_name: string
+    product_description: string
+    target_user: string
+    user_source: string
+    funnel_stage: string
+    primary_business_goal: string
+    secondary_business_goal: string
+    desired_user_action: string
+    success_metrics:
+      - string
+    known_constraints:
+      - string
+    existing_assets:
+      - string
+    reference_pages:
+      - string
+    language: string
+    market: string
+    device_priority: string
+    initial_page_mission: string
+    confirmed_facts:
+      - string
+    unknowns:
+      - string
+assumptions:
+  - assumption: string
+    reason: string
+    risk: low | medium | high
+missing_information:
+  - field: string
+    why_it_matters: string
+    priority: low | medium | high
+quality_check:
+  page_type_clear: boolean
+  target_user_clear: boolean
+  business_goal_clear: boolean
+  desired_action_clear: boolean
+  unknowns_explicitly_marked: boolean
+  no_downstream_work_performed: boolean
+next_step_readiness:
+  status: ready | partially_ready | blocked
+  reason: string
+  required_action: string

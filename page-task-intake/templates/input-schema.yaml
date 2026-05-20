@@ -1,0 +1,27 @@
+# Input schema for Page Task Intake
+
+raw_user_request: string
+
+optional_context:
+  product_name: string | unknown
+  product_description: string | unknown
+  page_name: string | unknown
+  page_type: landing_page | pricing_page | feature_page | product_page | signup_page | onboarding_page | waitlist_page | checkout_page | dashboard_page | settings_page | help_page | comparison_page | case_study_page | unknown
+  target_user: string | unknown
+  user_source: string | unknown
+  funnel_stage: awareness | consideration | evaluation | activation | conversion | retention | expansion | unknown
+  business_goal: string | unknown
+  secondary_business_goal: string | unknown
+  desired_user_action: string | unknown
+  known_constraints:
+    - string
+  timeline: string | unknown
+  stakeholders:
+    - string
+  existing_assets:
+    - string
+  reference_pages:
+    - string
+  language: string | unknown
+  market: string | unknown
+  device_priority: desktop | mobile | responsive | unknown
